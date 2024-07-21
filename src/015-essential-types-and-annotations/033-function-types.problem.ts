@@ -3,7 +3,9 @@ type User = {
   name: string;
 };
 
-const modifyUser = (users: User[], id: string, makeChange) => {
+type MakeChangeFunc = (user: User) => User;
+
+const modifyUser = (users: User[], id: string, makeChange: MakeChangeFunc) => {
   return users.map((u) => {
     if (u.id === id) {
       return makeChange(u);
@@ -29,3 +31,7 @@ modifyUser(
     return { ...user, name: 123 };
   },
 );
+
+
+type MyFunction = () => void;
+type MyFunctionInt = (number: number, number2: number) => number;
