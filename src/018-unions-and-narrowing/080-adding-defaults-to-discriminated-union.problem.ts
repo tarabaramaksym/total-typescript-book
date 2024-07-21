@@ -2,22 +2,22 @@ import { Equal, Expect } from "@total-typescript/helpers";
 import { expect, it } from "vitest";
 
 type Circle = {
-  kind: "circle";
+  kind?: "circle";
   radius: number;
 };
 
 type Square = {
-  kind: "square";
+  kind?: "square";
   sideLength: number;
 };
 
 type Shape = Circle | Square;
 
 function calculateArea(shape: Shape) {
-  if (shape.kind === "circle") {
-    return Math.PI * shape.radius * shape.radius;
-  } else {
+  if (shape.kind === "square") {
     return shape.sideLength * shape.sideLength;
+  } else {
+    return Math.PI * shape.radius * shape.radius;
   }
 }
 

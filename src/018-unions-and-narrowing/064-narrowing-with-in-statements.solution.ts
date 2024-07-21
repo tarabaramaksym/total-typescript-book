@@ -2,13 +2,13 @@ import { expect, it } from "vitest";
 
 type APIResponse =
   | {
-      data: {
-        id: string;
-      };
-    }
-  | {
-      error: string;
+    data: {
+      id: string;
     };
+  }
+  | {
+    error: string;
+  };
 
 const handleResponse = (response: APIResponse) => {
   if ("data" in response) {

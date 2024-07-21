@@ -1,4 +1,6 @@
-function move(direction: string, distance: number) {
+type VerticalDirection = "up" | "left"
+
+function move(direction: VerticalDirection, distance: number) {
   // Move the specified distance in the given direction
 }
 
