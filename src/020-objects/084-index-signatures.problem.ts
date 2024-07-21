@@ -1,4 +1,5 @@
-const scores = {};
+const scores : { [index: string]: number } = {
+};
 
 scores.math = 95;
 scores.english = 90;

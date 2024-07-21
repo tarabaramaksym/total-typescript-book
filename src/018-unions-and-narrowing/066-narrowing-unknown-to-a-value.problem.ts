@@ -2,9 +2,9 @@ import { Equal, Expect } from "@total-typescript/helpers";
 import { expect, it } from "vitest";
 
 type Data = {
-    data: {
-      id: number
-    }
+  data: {
+    id: number
+  }
 }
 
 const parseValue = (value: unknown) => {
