@@ -12,6 +12,6 @@ const result = concatName("John", "Doe");
 
 type test = Expect<Equal<typeof result, string>>;
 
-const result2 = concatName("John");
+const result2 = concatName("John", "Do");
 
 type test2 = Expect<Equal<typeof result2, string>>;
