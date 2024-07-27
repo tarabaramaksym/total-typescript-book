@@ -1,5 +1,5 @@
 type Coordinate = [number, number];
-const myHouse: Coordinate = [0, 0];
+const myHouse: Readonly<Coordinate> = [0, 0];
 
 const dangerousFunction = (arrayOfNumbers: number[]) => {
   arrayOfNumbers.pop();
